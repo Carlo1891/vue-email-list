@@ -20,9 +20,17 @@ app = new Vue ({
                 console.log (response.data.response);
                 this.emailList.push (response.data.response);
             });
-        }
+        },
+
+        // Bonus, ciclo for per 10 volte 
+        // pushAllRandomEmails: function() {
+        //     for (let i = 0; i < 10; i++) {
+        //         this.pushRandomEmail();
+        //     }
+        // },
     },
     created() {
         this.pushRandomEmail ();
+        // pushAllRandomEmail
     }
 }) 
